@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.umeng.newxp.view.widget.KeyboardListenRelativeLayout android:orientation="vertical" android:id="@id/umeng_xp_ew_layout_content" android:background="#ff999999" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/umeng_xp_ew_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/umeng_xp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/umeng_xp_ew_title_layout" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/umeng_xp_preloading" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="正在加载，请稍后." android:layout_below="@id/umeng_xp_ew_title_layout" />
+    <RelativeLayout android:id="@id/umeng_xp_ew_error" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/umeng_xp_ew_title_layout">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_layout" android:background="#ffffffff" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/munion_error_title_text_size" android:textColor="@color/munion_error_title" android:gravity="center" android:id="@id/common_mask_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/munion_webview_error_common_title" android:shadowColor="#ffffffff" android:shadowRadius="2.0" />
+            <TextView android:textSize="@dimen/munion_error_subtitle_text_size" android:textColor="@color/munion_error_subtitle" android:gravity="center" android:id="@id/common_mask_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/munion_error_subtitle_margin_top" android:text="@string/munion_webview_error_common_subtitle" android:shadowColor="#ffffffff" android:shadowRadius="2.0" />
+            <Button android:textSize="@dimen/munion_error_btn_text_size" android:textColor="@drawable/umeng_xp_hl_webview_error_button_color_selector" android:id="@id/umeng_xp_ew_error_btn" android:background="@drawable/umeng_xp_hl_webview_error_button_background_selector" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/munion_error_btn_margin_top" android:text="@string/munion_error_retry" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>

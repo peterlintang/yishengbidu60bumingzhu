@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.umeng.newxp.view.handler.umwall.CurtainView android:id="@id/umeng_xp_ew_curtain" android:background="#66333333" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/umeng_xp_ew_search_result_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/umeng_xp_ew_search_bar" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textColor="@color/munion_indicator_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="搜索结果:" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/munion_indicator_text_color" android:ellipsize="end" android:id="@id/umeng_xp_ew_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxWidth="200.0dip" android:maxLines="1" />
+            <ImageButton android:id="@id/umeng_xp_ew_search_delete" android:background="@null" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:src="@drawable/umeng_xp_hl_ew_title_delete" android:scaleType="centerInside" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/umeng_xp_ew_search_result_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

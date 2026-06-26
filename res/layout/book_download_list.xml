@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_menu" android:background="#ff1c82ac" android:layout_width="fill_parent" android:layout_height="@dimen/height_topmenubar" android:layout_alignParentTop="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/imagebutton_back" android:background="@drawable/buttonbg_common" android:paddingLeft="-2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:scaleType="centerInside" android:layout_weight="5.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/linearLayout_nomalLayer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/textview_label" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="下载列表" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <ImageButton android:id="@id/imagebutton_removeall" android:background="@drawable/buttonbg_common" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_edit" android:scaleType="centerInside" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/imageview_topshadow" android:layout_width="fill_parent" android:layout_height="12.0px" android:src="@drawable/topmenu_shadow_x" android:scaleType="fitXY" android:layout_below="@id/top_menu" />
+    <ListView android:id="@id/download_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:layout_below="@id/imageview_topshadow" />
+</RelativeLayout>

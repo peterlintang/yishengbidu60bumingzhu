@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/screen" android:layout_width="fill_parent" android:layout_height="@dimen/munion_actionbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/actionbar_home" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/munion_actionbar_height" android:layout_alignParentLeft="true">
+        <LinearLayout android:id="@id/actionbar_title_view" android:paddingLeft="@dimen/munion_actionbar_button_item_width" android:paddingRight="@dimen/munion_actionbar_button_item_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/munion_actionbar_more_textsize" android:textColor="@color/munion_actionbar_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/actionbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/actionbar_title_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_home_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/actionbar_home_is_back" android:padding="0.0dip" android:layout_width="@dimen/munion_actionbar_item_width" android:layout_height="fill_parent" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_view_plus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/munion_actionbar_height" android:layout_alignParentRight="true">
+            <ImageButton android:id="@id/actionbar_plus" android:background="@null" android:singleLine="true" style="@style/MunionActionBarItem" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/actionbar_actions" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/munion_actionbar_height" android:layout_margin="0.0dip" android:layout_toLeftOf="@id/actionbar_view_plus" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

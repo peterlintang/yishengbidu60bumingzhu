@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.umeng.newxp.view.common.actionbar.ActionBar android:id="@id/umeng_actionbar" style="@style/UmengActionbarDefault" />
+        <com.umeng.newxp.view.UMCityView android:id="@id/umeng_cityview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.taobao.munion.actionbar.ActionBar android:id="@id/munion_actionbar" style="@style/MunionActionBar" />
+        <RelativeLayout android:gravity="center_horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/munion_label_radio_button_margin_bottom">
+            <TextView android:textSize="@dimen/munion_label_subtitle_text_size" android:textColor="#ff707070" android:gravity="center" android:id="@id/label_detail_subtitle" android:background="#fff7f7f7" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/munion_label_subtitle_height" android:text="@string/munion_label_detail_sync_not_goods" android:layout_centerHorizontal="true" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/label_detail_radio_group" android:background="@color/munion_title_bar_color" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/munion_label_radio_button_height" android:layout_marginTop="@dimen/munion_label_radio_button_margin_top" android:layout_centerHorizontal="true">
+                <RadioButton android:textSize="@dimen/munion_label_switch_button_text_size" android:textColor="@drawable/munion_radio_button_color_selector" android:gravity="center" android:id="@id/radio_btn_async" android:background="@drawable/munion_radio_button_background_selector" android:paddingLeft="@dimen/munion_label_radio_button_pading_left" android:paddingTop="@dimen/munion_label_radio_button_pading_top" android:paddingRight="@dimen/munion_label_radio_button_pading_right" android:paddingBottom="@dimen/munion_label_radio_button_pading_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/munion_label_detail_sync_not" />
+                <RadioButton android:textSize="@dimen/munion_label_switch_button_text_size" android:textColor="@drawable/munion_radio_button_color_selector" android:gravity="center" android:id="@id/radio_btn_sync" android:background="@drawable/munion_radio_button_background_selector" android:paddingLeft="@dimen/munion_label_radio_button_pading_left" android:paddingTop="@dimen/munion_label_radio_button_pading_top" android:paddingRight="@dimen/munion_label_radio_button_pading_right" android:paddingBottom="@dimen/munion_label_radio_button_pading_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/munion_label_detail_sync_already" />
+            </RadioGroup>
+        </RelativeLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/fav_list_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

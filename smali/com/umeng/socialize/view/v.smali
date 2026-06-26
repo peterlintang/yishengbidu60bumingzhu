@@ -1,0 +1,93 @@
+.class Lcom/umeng/socialize/view/v;
+.super Lcom/umeng/socialize/controller/listener/SocializeListeners$LoginListener;
+
+
+# instance fields
+.field final synthetic a:Lcom/umeng/socialize/view/u;
+
+
+# direct methods
+.method constructor <init>(Lcom/umeng/socialize/view/u;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/umeng/socialize/view/v;->a:Lcom/umeng/socialize/view/u;
+
+    invoke-direct {p0}, Lcom/umeng/socialize/controller/listener/SocializeListeners$LoginListener;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public loginFailed(I)V
+    .locals 2
+
+    invoke-super {p0, p1}, Lcom/umeng/socialize/controller/listener/SocializeListeners$LoginListener;->loginFailed(I)V
+
+    iget-object v0, p0, Lcom/umeng/socialize/view/v;->a:Lcom/umeng/socialize/view/u;
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/u;->a(Lcom/umeng/socialize/view/u;)Lcom/umeng/socialize/view/q;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/q;->g(Lcom/umeng/socialize/view/q;)Lcom/umeng/socialize/view/CommentActivity;
+
+    move-result-object v0
+
+    const-string v1, "\u7ed1\u5b9a\u5931\u8d25\uff0c\u8bf7\u91cd\u8bd5\u3002"
+
+    invoke-static {v0, p1, v1}, Lcom/umeng/socialize/bean/o;->a(Landroid/content/Context;ILjava/lang/String;)I
+
+    return-void
+.end method
+
+.method public loginSuccessed(Lcom/umeng/socialize/bean/SHARE_MEDIA;Z)V
+    .locals 2
+
+    invoke-super {p0, p1, p2}, Lcom/umeng/socialize/controller/listener/SocializeListeners$LoginListener;->loginSuccessed(Lcom/umeng/socialize/bean/SHARE_MEDIA;Z)V
+
+    if-eqz p1, :cond_0
+
+    if-nez p2, :cond_0
+
+    iget-object v0, p0, Lcom/umeng/socialize/view/v;->a:Lcom/umeng/socialize/view/u;
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/u;->a(Lcom/umeng/socialize/view/u;)Lcom/umeng/socialize/view/q;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/umeng/socialize/view/v;->a:Lcom/umeng/socialize/view/u;
+
+    invoke-static {v1}, Lcom/umeng/socialize/view/u;->a(Lcom/umeng/socialize/view/u;)Lcom/umeng/socialize/view/q;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/umeng/socialize/view/q;->g(Lcom/umeng/socialize/view/q;)Lcom/umeng/socialize/view/CommentActivity;
+
+    move-result-object v1
+
+    invoke-static {v1, p1}, Lcom/umeng/socialize/a/d;->b(Landroid/content/Context;Lcom/umeng/socialize/bean/SHARE_MEDIA;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1, p1}, Lcom/umeng/socialize/view/q;->a(Lcom/umeng/socialize/view/q;Ljava/lang/String;Lcom/umeng/socialize/bean/SHARE_MEDIA;)Z
+
+    iget-object v0, p0, Lcom/umeng/socialize/view/v;->a:Lcom/umeng/socialize/view/u;
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/u;->a(Lcom/umeng/socialize/view/u;)Lcom/umeng/socialize/view/q;
+
+    move-result-object v0
+
+    invoke-static {v0, p1}, Lcom/umeng/socialize/view/q;->a(Lcom/umeng/socialize/view/q;Lcom/umeng/socialize/bean/SHARE_MEDIA;)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/umeng/socialize/view/v;->a:Lcom/umeng/socialize/view/u;
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/u;->a(Lcom/umeng/socialize/view/u;)Lcom/umeng/socialize/view/q;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/q;->j(Lcom/umeng/socialize/view/q;)V
+
+    return-void
+.end method

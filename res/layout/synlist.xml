@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/menu_top" android:background="#ff1c82ac" android:layout_width="fill_parent" android:layout_height="@dimen/height_topmenubar" android:layout_alignParentTop="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_close" android:background="@drawable/buttonbg_common" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_back" android:scaleType="centerInside" android:layout_weight="3.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/titleshow" android:paddingLeft="-10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/str_syn_localbooks" android:singleLine="true" android:layout_weight="1.0" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/progressBar1" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0px" android:layout_weight="3.0" style="?android:attr/progressBarStyleSmall" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:background="@color/common_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="#ffffffff" android:id="@id/button_stopSyn" android:background="@drawable/buttonbg_common" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="停止同步" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="#ffffffff" android:id="@id/button_importBookStore" android:background="@drawable/buttonbg_common" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="导入书架" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/synListView" android:background="@drawable/themebg_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bookstore_list_item_bg2" android:cacheColorHint="#00000000" android:layout_above="@id/linearLayout2" android:layout_below="@id/menu_top" android:fastScrollEnabled="true" style="@style/bookstoreListViewStyle" />
+</RelativeLayout>

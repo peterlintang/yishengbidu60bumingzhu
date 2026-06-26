@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_menu" android:background="#ff1c82ac" android:layout_width="fill_parent" android:layout_height="@dimen/height_topmenubar" android:layout_alignParentTop="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/imagebutton_back" android:background="@drawable/buttonbg_common" android:paddingLeft="-2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:scaleType="centerInside" android:layout_weight="5.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/linearLayout_nomalLayer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/textview_label" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="云端阅读记录" android:layout_weight="3.0" />
+                <ImageButton android:gravity="right|center" android:id="@id/imagebutton_sync" android:background="@drawable/buttonbg_common" android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/icon_refresh" android:scaleType="centerInside" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/imageview_topshadow" android:layout_width="fill_parent" android:layout_height="5.0dip" android:src="@drawable/topmenu_shadow_x" android:scaleType="fitXY" android:layout_below="@id/top_menu" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/segment" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_below="@id/imageview_topshadow" android:layout_centerInParent="true">
+        <com.ireadercity.b2.ui.widget.SegmentedRadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/segment_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:checkedButton="@id/button_one" android:layout_centerInParent="true">
+            <RadioButton android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/radio_colors" android:gravity="center" android:id="@id/button_one" android:button="@null" android:minWidth="150.0dip" android:minHeight="48.0dip" android:text="所有记录" />
+            <RadioButton android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/radio_colors" android:gravity="center" android:id="@id/button_two" android:button="@null" android:minWidth="150.0dip" android:minHeight="48.0dip" android:text="不在本机" />
+        </com.ireadercity.b2.ui.widget.SegmentedRadioGroup>
+    </LinearLayout>
+    <ListView android:id="@id/cloud_progress_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:layout_below="@id/segment" />
+</RelativeLayout>

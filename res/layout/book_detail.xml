@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/menu_top" android:background="#ff1c82ac" android:layout_width="fill_parent" android:layout_height="@dimen/height_topmenubar" android:layout_alignParentTop="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/imagebutton_back" android:background="@drawable/buttonbg_common" android:paddingLeft="-2.0px" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:scaleType="centerInside" android:layout_weight="5.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/relativeLayout_searchlayer" android:background="#ff1c82ac" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="15.0sp" android:textColor="#ffffffff" android:textColorHint="#ff55ffff" android:gravity="center" android:id="@id/edittext_searchkeyword" android:background="@drawable/bg_search_input" android:paddingLeft="15.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/hint_searchbooks" android:singleLine="true" android:imeOptions="actionGo" android:imeActionId="@id/actionGo" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/linearLayout_nomalLayer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/bookTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="this show book name" android:singleLine="true" android:layout_weight="1.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <ImageButton android:id="@id/imagebutton_sharebook" android:background="@drawable/buttonbg_common" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_share" android:scaleType="centerInside" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/imageview_topshadow" android:layout_width="fill_parent" android:layout_height="12.0px" android:src="@drawable/topmenu_shadow_x" android:scaleType="fitXY" android:layout_below="@id/menu_top" />
+    <LinearLayout android:orientation="vertical" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/imageview_topshadow">
+        <ScrollView android:id="@id/bodybotttom" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/bodytop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <com.ireadercity.b2.ui.widget.DetailImageView android:id="@id/bookimage" android:background="@drawable/bookshelf_covershadow" android:paddingRight="8.0px" android:paddingBottom="5.0px" android:layout_width="140.0dip" android:layout_height="200.0dip" android:layout_margin="3.0dip" android:src="@drawable/bk_book" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textColor="#ff000000" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="author" android:maxLines="2" android:layout_toRightOf="@id/bookimage" />
+                    <TextView android:textColor="#ff000000" android:id="@id/booksize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="4545kb" android:maxLines="2" android:layout_toRightOf="@id/bookimage" android:layout_below="@id/author" />
+                    <TextView android:textColor="#ff000000" android:id="@id/bookScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="评分：" android:layout_toRightOf="@id/bookimage" android:layout_below="@id/booksize" />
+                    <FrameLayout android:id="@id/starsBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/bookScore" android:layout_below="@id/booksize">
+                        <ImageView android:layout_gravity="left|center" android:id="@id/stars" android:background="@drawable/stars_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <TextView android:textColor="#ff000000" android:id="@id/bookjifen" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="积分：" android:maxLines="2" android:layout_toRightOf="@id/bookimage" android:layout_below="@id/starsBox" />
+                    <TextView android:gravity="center" android:id="@id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:text="  免费下载   " android:drawableLeft="@drawable/icon_addtodownlist" android:layout_toRightOf="@id/bookimage" android:layout_below="@id/starsBox" style="@style/GreenButtom" />
+                    <TextView android:gravity="center" android:id="@id/get_app_wall" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="  获取积分  " android:layout_toRightOf="@id/bookimage" android:layout_below="@id/download" style="@style/BlueButtom" />
+                    <TextView android:gravity="center" android:id="@id/download_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="  下载列表  " android:drawableLeft="@drawable/icon_gotodownlist" android:layout_toRightOf="@id/bookimage" android:layout_below="@id/download" style="@style/BlueButtom" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/descBox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:id="@id/txtlabel" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内容提要" />
+                    <View android:id="@id/devider" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/txtlabel" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/content" android:background="#ffffffff" android:padding="8.0dip" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="contentntntntntnefwerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrtwertwertweywwwwwwwwwwwwwwwwwwwwwwrtyertyeeeeeeeeeeeeeeeeeee" android:maxLines="3" android:layout_below="@id/devider" />
+                    <ImageView android:id="@id/imageview_shawdown_devider" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_margin="5.0px" android:src="@drawable/icon_bookdescdetail" android:layout_below="@id/content" />
+                    <ImageView android:id="@id/imageview_showdetail" android:layout_width="30.0px" android:layout_height="30.0px" android:layout_margin="5.0px" android:src="@drawable/icon_bookdescdetail" android:scaleType="centerInside" android:layout_below="@id/imageview_shawdown_devider" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/recommondBox_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:gravity="center" android:id="@id/imagebtn_bookcomment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  评论" android:drawableLeft="@drawable/icon_writecomment" android:layout_centerInParent="true" style="@style/BlueButtom" />
+                    <TextView android:gravity="center" android:id="@id/favourite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="  收藏" android:drawableLeft="@drawable/icon_favourite" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BlueButtom" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/recommondBox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <View android:id="@id/devider_1" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="2.0px" />
+                    <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="为您推荐" android:layout_below="@id/devider_1" />
+                    <View android:id="@id/devider_2" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/content" />
+                    <com.ireadercity.b2.ui.HorizontialListView android:id="@id/listview_relatedbooks" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="126.0dip" android:layout_below="@id/devider_2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

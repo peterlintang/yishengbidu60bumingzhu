@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title>New Titles</title>
+  <id>urn:manybooks:54273f28-d393-2c84-b7b9-f4e3b313cce5</id>
+  <updated>2013-03-29T20:19:25-06:00</updated>
+  <link  rel="search" title="Search Catalog" type="application/atom+xml" href="http://manybooks.net/opds/search.php?q={searchTerms}"/>
+  <link rel="self" type="application/atom+xml" href="http://manybooks.net/opds/new_titles.php"/>
+<link rel="next" type="application/atom+xml" href="http://manybooks.net/opds/new_titles.php?n=10"/>
+<author>
+    <name>ManyBooks.net</name>
+    <uri>http://manybooks.net/</uri>
+    <email>matthew@manybooks.net</email>
+  </author>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">Guy and Pauline</div>
+    </title>
+    <content type="text">
+    	
+    </content>
+    <id>urn:manybooks:c5396ae3-3853-5712-3fc3-a09d4e7451c9</id>
+    <author>
+      <name>Compton MacKenzie</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="Guy and Pauline" href="http://manybooks.net/opds/title_detail.php?tid=mackenziec3955639556-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/mackenziec3955639556-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">Two Chancellors</div>
+    </title>
+    <content type="text">
+    	Prince Gortchakoff and Prince Bismark
+    </content>
+    <id>urn:manybooks:849b6584-faf3-8e09-196d-dd84d03fdac9</id>
+    <author>
+      <name>Julian Klaczko</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="Two Chancellors" href="http://manybooks.net/opds/title_detail.php?tid=klaczko3955939559-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/klaczko3955939559-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">And the Kaiser abdicates</div>
+    </title>
+    <content type="text">
+    	The German Revolution November 1918-August 1919
+    </content>
+    <id>urn:manybooks:1776510d-a43f-8304-ebce-847b853cdac1</id>
+    <author>
+      <name>Stephen Miles Bouton</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="And the Kaiser abdicates" href="http://manybooks.net/opds/title_detail.php?tid=bouton3956339563-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/bouton3956339563-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">The Carved Lions</div>
+    </title>
+    <content type="text">
+    	
+    </content>
+    <id>urn:manybooks:3fae1cc6-22c3-d9df-b713-530c7be57112</id>
+    <author>
+      <name>Mrs Molesworth</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="The Carved Lions" href="http://manybooks.net/opds/title_detail.php?tid=moleswor3954939549-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/moleswor3954939549-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">The House That Grew</div>
+    </title>
+    <content type="text">
+    	
+    </content>
+    <id>urn:manybooks:6c0e888e-1d86-0bec-3348-477a14f8fc2b</id>
+    <author>
+      <name>Mrs Molesworth</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="The House That Grew" href="http://manybooks.net/opds/title_detail.php?tid=moleswor3955439554-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/moleswor3955439554-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">The Hotel St. Francis Cook Book</div>
+    </title>
+    <content type="text">
+    	
+    </content>
+    <id>urn:manybooks:65d3ff53-0304-8a11-415d-4f40420a7917</id>
+    <author>
+      <name>Victor Hirtzler</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="The Hotel St. Francis Cook Book" href="http://manybooks.net/opds/title_detail.php?tid=hirtzler3955039550-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/hirtzler3955039550-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">The Forged Note</div>
+    </title>
+    <content type="text">
+    	A Romance of the Darker Races
+    </content>
+    <id>urn:manybooks:5f987e04-5f6c-4ce3-e008-e55539988b4b</id>
+    <author>
+      <name>Oscar Micheaux</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="The Forged Note" href="http://manybooks.net/opds/title_detail.php?tid=micheaux3954839548" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/micheaux3954839548.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">Wit and Humor of the Bible</div>
+    </title>
+    <content type="text">
+    	A Literary Study
+    </content>
+    <id>urn:manybooks:4d4ab970-bd0e-caa7-21d9-8d0fef6e30a2</id>
+    <author>
+      <name>Marion D. Shutter</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="Wit and Humor of the Bible" href="http://manybooks.net/opds/title_detail.php?tid=shutter3954639546-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/shutter3954639546-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">Beaumaroy Home from the Wars</div>
+    </title>
+    <content type="text">
+    	
+    </content>
+    <id>urn:manybooks:0494b6f3-800a-7c1d-19e5-624162c4cc64</id>
+    <author>
+      <name>Anthony Hope</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="Beaumaroy Home from the Wars" href="http://manybooks.net/opds/title_detail.php?tid=hopeanth3954739547-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/hopeanth3954739547-8.jpg"/>
+</entry>
+<entry>
+    <title type="text/xhtml">
+    	<div xmlns="http://www.w3.org/1999/xhtml">The Early Life and Adventures of Sylvia Scarlett</div>
+    </title>
+    <content type="text">
+    	
+    </content>
+    <id>urn:manybooks:530f4e29-14b5-7045-8257-bbf3ee79ae33</id>
+    <author>
+      <name>Compton MacKenzie</name>
+    </author>
+    <updated>2013-03-29T20:19:25-06:00</updated>
+    <link type="application/atom+xml" title="The Early Life and Adventures of Sylvia Scarlett" href="http://manybooks.net/opds/title_detail.php?tid=mackenziec3952739527-8" />
+    <link rel="http://opds-spec.org/thumbnail" type="image/jpeg" href="http://manybooks.net/thumbnails/mackenziec3952739527-8.jpg"/>
+</entry></feed>

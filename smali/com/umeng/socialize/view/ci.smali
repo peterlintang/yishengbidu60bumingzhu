@@ -1,0 +1,43 @@
+.class Lcom/umeng/socialize/view/ci;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final synthetic a:Lcom/umeng/socialize/view/cb;
+
+.field private final synthetic b:Lcom/umeng/socialize/bean/UMFriend;
+
+
+# direct methods
+.method constructor <init>(Lcom/umeng/socialize/view/cb;Lcom/umeng/socialize/bean/UMFriend;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/umeng/socialize/view/ci;->a:Lcom/umeng/socialize/view/cb;
+
+    iput-object p2, p0, Lcom/umeng/socialize/view/ci;->b:Lcom/umeng/socialize/bean/UMFriend;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/umeng/socialize/view/ci;->a:Lcom/umeng/socialize/view/cb;
+
+    invoke-static {v0}, Lcom/umeng/socialize/view/cb;->i(Lcom/umeng/socialize/view/cb;)Lcom/umeng/socialize/view/controller/a;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/umeng/socialize/view/ci;->b:Lcom/umeng/socialize/bean/UMFriend;
+
+    invoke-virtual {v0, v1}, Lcom/umeng/socialize/view/controller/a;->a(Lcom/umeng/socialize/bean/UMFriend;)V
+
+    return-void
+.end method

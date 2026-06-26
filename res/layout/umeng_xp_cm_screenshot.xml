@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/umeng_xp_panelHeight" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff99cc00" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:id="@id/test_left" android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="GoLeft" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:id="@id/test_step" android:layout_width="96.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" android:inputType="number" />
+        <Button android:id="@id/test_right" android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="GoRight" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.umeng.newxp.view.widget.SwipeView android:layout_gravity="center_vertical" android:id="@id/umeng_xp_swipeview" android:background="#ff000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

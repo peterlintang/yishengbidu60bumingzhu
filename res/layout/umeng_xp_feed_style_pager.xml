@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/umeng_xp_feed_pager_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/umeng_xp_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/umeng_xp_adwords" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:lines="1" />
+    <com.umeng.newxp.view.widget.CYCImageView android:id="@id/umeng_xp_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:scaleType="fitCenter" />
+</LinearLayout>

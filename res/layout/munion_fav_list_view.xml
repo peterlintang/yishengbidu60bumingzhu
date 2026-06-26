@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/munion_bottom_bar_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/fav_listview" android:background="@android:color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textColor="#ff333333" android:gravity="center" android:id="@id/fav_footer" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/munion_label_list_footer_view_height" android:text="努力加载中，请稍等一下哦，亲～" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/munion_bottom_banner_height" layout="@layout/munion_fav_list_bottom_bar" />
+    </LinearLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

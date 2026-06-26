@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff393d46" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/umeng_socialize_titile_bar" />
+    <RelativeLayout android:background="#ff393d46" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.umeng.socialize.view.wigets.SearchBox android:textColor="#ffffffff" android:id="@id/search_text" android:background="@drawable/umeng_socialize_at_search_bg" android:paddingLeft="35.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:hint="搜索" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/umeng_socialize_search_icon" />
+        <com.umeng.socialize.view.wigets.SectionListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_text" />
+        <com.umeng.socialize.view.wigets.SlideBar android:id="@id/slideBar" android:background="@drawable/umeng_socialize_sidebar_selector" android:visibility="gone" android:layout_width="28.0px" android:layout_height="fill_parent" android:layout_below="@id/search_text" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/umeng_socialize_progress" android:background="#ff393d46" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

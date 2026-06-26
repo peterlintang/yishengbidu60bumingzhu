@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.taobao.munion.actionbar.ActionBar android:id="@id/munion_actionbar" android:layout_alignParentTop="true" style="@style/MunionActionBar" />
+        <com.taobao.munion.webview.MunionWebview android:id="@id/goods_main_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/munion_bottom_goods_webview_margin_bottom" android:layout_below="@id/munion_actionbar" />
+        <View android:id="@id/goods_bottom_boder" android:background="@color/munion_bottom_bar_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/munion_bottom_goods_webview_margin_bottom" android:layout_alignParentBottom="true" />
+        <ImageButton android:id="@id/love_taobao_btn" android:background="@drawable/munion_fav_button_background" android:padding="@dimen/munion_bottom_goods_bottom_bar_icon_padding" android:layout_width="@dimen/munion_bottom_goods_bottom_bar_icon_width" android:layout_height="@dimen/munion_bottom_goods_bottom_bar_icon_height" android:layout_marginLeft="@dimen/munion_bottom_goods_detail_banner_left_margin" android:layout_marginRight="@dimen/munion_bottom_goods_detail_banner_right_margin" android:src="@drawable/munion_goods_detail_fav_box_button_selector" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageButton android:id="@id/goods_fav_button" android:background="@drawable/munion_fav_button_background" android:padding="@dimen/munion_bottom_goods_bottom_bar_icon_padding" android:layout_width="@dimen/munion_bottom_goods_bottom_bar_icon_width" android:layout_height="@dimen/munion_bottom_goods_bottom_bar_icon_height" android:src="@drawable/munion_goods_detail_like_not_button_selector" android:scaleType="fitXY" android:layout_toLeftOf="@id/love_taobao_btn" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

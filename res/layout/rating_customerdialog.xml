@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/dialogBgColor" android:layout_width="300.0dip" android:layout_height="300.0dip" android:minHeight="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topTools" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/common_blue" android:id="@id/textview_dialog_title" android:padding="20.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="撰写评论" />
+        <View android:background="@color/common_blue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/textview_dialog_title" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bodyrelative" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_below="@id/topTools">
+        <RatingBar android:id="@id/ratingBar_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:numStars="5" android:rating="3.0" android:stepSize="1.0" android:isIndicator="false" android:layout_alignParentTop="true" style="@style/bookRatingBar" />
+        <EditText android:id="@id/editText_commentcontent" android:background="#ffffffff" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="" android:hint="@string/comment_hint" android:lines="3" android:minLines="3" android:layout_below="@id/ratingBar_comment" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider_view" android:background="@color/dkgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/bodyrelative" />
+    <LinearLayout android:id="@id/bottomtools" android:layout_width="fill_parent" android:layout_height="40.0dip" android:weightSum="2.0" android:layout_below="@id/divider_view" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/button_rating_comment" android:background="@drawable/buttonbg_customerdialog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yes" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:background="@color/dkgray" android:layout_width="1.0dip" android:layout_height="wrap_content" />
+        <Button android:textColor="@color/white" android:id="@id/button_rating_cancel" android:background="@drawable/buttonbg_customerdialog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

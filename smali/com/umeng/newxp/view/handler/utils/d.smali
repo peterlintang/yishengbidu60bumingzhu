@@ -1,0 +1,303 @@
+.class public Lcom/umeng/newxp/view/handler/utils/d;
+.super Lcom/umeng/newxp/view/handler/utils/e;
+
+
+# static fields
+.field private static final e:Ljava/lang/String; = "ImageResizer"
+
+
+# instance fields
+.field protected a:I
+
+.field protected b:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/umeng/newxp/view/handler/utils/e;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p0, p2}, Lcom/umeng/newxp/view/handler/utils/d;->a(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;II)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/umeng/newxp/view/handler/utils/e;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p0, p2, p3}, Lcom/umeng/newxp/view/handler/utils/d;->a(II)V
+
+    return-void
+.end method
+
+.method public static a(Landroid/graphics/BitmapFactory$Options;II)I
+    .locals 5
+
+    iget v2, p0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
+
+    iget v3, p0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
+
+    const/4 v0, 0x1
+
+    if-gt v2, p2, :cond_0
+
+    if-le v3, p1, :cond_2
+
+    :cond_0
+    int-to-float v0, v2
+
+    int-to-float v1, p2
+
+    div-float/2addr v0, v1
+
+    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+
+    move-result v0
+
+    int-to-float v1, v3
+
+    int-to-float v4, p1
+
+    div-float/2addr v1, v4
+
+    invoke-static {v1}, Ljava/lang/Math;->round(F)I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_1
+
+    :goto_0
+    mul-int v1, v3, v2
+
+    int-to-float v1, v1
+
+    mul-int v2, p1, p2
+
+    mul-int/lit8 v2, v2, 0x2
+
+    int-to-float v2, v2
+
+    :goto_1
+    mul-int v3, v0, v0
+
+    int-to-float v3, v3
+
+    div-float v3, v1, v3
+
+    cmpl-float v3, v3, v2
+
+    if-lez v3, :cond_2
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_2
+    return v0
+.end method
+
+.method public static a(Landroid/content/res/Resources;IIILcom/umeng/newxp/view/handler/utils/b;)Landroid/graphics/Bitmap;
+    .locals 2
+
+    new-instance v0, Landroid/graphics/BitmapFactory$Options;
+
+    invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    invoke-static {p0, p1, v0}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    invoke-static {v0, p2, p3}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/graphics/BitmapFactory$Options;II)I
+
+    move-result v1
+
+    iput v1, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+
+    invoke-static {}, Lcom/umeng/newxp/view/handler/utils/f;->d()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {v0, p4}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/graphics/BitmapFactory$Options;Lcom/umeng/newxp/view/handler/utils/b;)V
+
+    :cond_0
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    invoke-static {p0, p1, v0}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/io/FileDescriptor;IILcom/umeng/newxp/view/handler/utils/b;)Landroid/graphics/Bitmap;
+    .locals 3
+
+    const/4 v2, 0x0
+
+    new-instance v0, Landroid/graphics/BitmapFactory$Options;
+
+    invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    invoke-static {p0, v2, v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    invoke-static {v0, p1, p2}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/graphics/BitmapFactory$Options;II)I
+
+    move-result v1
+
+    iput v1, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    invoke-static {}, Lcom/umeng/newxp/view/handler/utils/f;->d()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {v0, p3}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/graphics/BitmapFactory$Options;Lcom/umeng/newxp/view/handler/utils/b;)V
+
+    :cond_0
+    invoke-static {p0, v2, v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/lang/String;IILcom/umeng/newxp/view/handler/utils/b;)Landroid/graphics/Bitmap;
+    .locals 2
+
+    new-instance v0, Landroid/graphics/BitmapFactory$Options;
+
+    invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    invoke-static {p0, v0}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    invoke-static {v0, p1, p2}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/graphics/BitmapFactory$Options;II)I
+
+    move-result v1
+
+    iput v1, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+
+    invoke-static {}, Lcom/umeng/newxp/view/handler/utils/f;->d()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {v0, p3}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/graphics/BitmapFactory$Options;Lcom/umeng/newxp/view/handler/utils/b;)V
+
+    :cond_0
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    invoke-static {p0, v0}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static a(Landroid/graphics/BitmapFactory$Options;Lcom/umeng/newxp/view/handler/utils/b;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/graphics/BitmapFactory$Options;->inMutable:Z
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1, p0}, Lcom/umeng/newxp/view/handler/utils/b;->a(Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    iput-object v0, p0, Landroid/graphics/BitmapFactory$Options;->inBitmap:Landroid/graphics/Bitmap;
+
+    :cond_0
+    return-void
+.end method
+
+.method private c(I)Landroid/graphics/Bitmap;
+    .locals 4
+
+    iget-object v0, p0, Lcom/umeng/newxp/view/handler/utils/d;->d:Landroid/content/res/Resources;
+
+    iget v1, p0, Lcom/umeng/newxp/view/handler/utils/d;->a:I
+
+    iget v2, p0, Lcom/umeng/newxp/view/handler/utils/d;->b:I
+
+    invoke-virtual {p0}, Lcom/umeng/newxp/view/handler/utils/d;->f()Lcom/umeng/newxp/view/handler/utils/b;
+
+    move-result-object v3
+
+    invoke-static {v0, p1, v1, v2, v3}, Lcom/umeng/newxp/view/handler/utils/d;->a(Landroid/content/res/Resources;IIILcom/umeng/newxp/view/handler/utils/b;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected a(Ljava/lang/Object;)Landroid/graphics/Bitmap;
+    .locals 1
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-direct {p0, v0}, Lcom/umeng/newxp/view/handler/utils/d;->c(I)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public a(I)V
+    .locals 0
+
+    invoke-virtual {p0, p1, p1}, Lcom/umeng/newxp/view/handler/utils/d;->a(II)V
+
+    return-void
+.end method
+
+.method public a(II)V
+    .locals 0
+
+    iput p1, p0, Lcom/umeng/newxp/view/handler/utils/d;->a:I
+
+    iput p2, p0, Lcom/umeng/newxp/view/handler/utils/d;->b:I
+
+    return-void
+.end method

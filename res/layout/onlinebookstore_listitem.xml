@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/books_list_arrow2x" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.ireadercity.b2.ui.widget.RecycleableImageView android:id="@id/imageView_book" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="40.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/a96_book2x" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:ellipsize="end" android:gravity="left|center" android:id="@id/textView_bookname" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="躺着就能学英语" android:singleLine="true" android:layout_toLeftOf="@id/imageView1" android:layout_toRightOf="@id/imageView_book" android:layout_centerHorizontal="true" />
+        <TextView android:ellipsize="end" android:id="@id/textView_bookdescription" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:lines="2" android:layout_toLeftOf="@id/imageView1" android:layout_below="@id/textView_bookname" android:layout_alignLeft="@id/textView_bookname" />
+    </RelativeLayout>
+</RelativeLayout>

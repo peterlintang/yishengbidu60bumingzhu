@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/umeng_xp_hl_ew_item_bg" android:padding="1.0px" android:layout_width="150.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.umeng.newxp.view.handler.ewall.RecyclingImageView android:id="@id/umeng_xp_ew_item_imv" android:layout_width="fill_parent" android:layout_height="148.0dip" android:scaleType="centerCrop" />
+    <View android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/umeng_xp_ew_item_price_symbol" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥ " android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffd90000" android:id="@id/umeng_xp_ew_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/umeng_xp_ew_item_price_symbol" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/umeng_xp_ew_item_sells" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

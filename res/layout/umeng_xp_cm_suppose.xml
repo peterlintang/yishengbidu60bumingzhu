@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/umeng_xp_suppose" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="猜你喜欢：" android:layout_below="@id/umeng_xp_dlCon" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/umeng_xp_suppose_iconparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/umeng_xp_appicon0" android:src="@drawable/umeng_xp_cm_zhanwei" style="@style/umeng_xp_suppose_cell_image" />
+            <TextView android:id="@id/umeng_xp_apptext0" android:layout_below="@id/umeng_xp_appicon0" style="@style/umeng_xp_suppose_cell_text" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/umeng_xp_appicon1" android:src="@drawable/umeng_xp_cm_zhanwei" style="@style/umeng_xp_suppose_cell_image" />
+            <TextView android:id="@id/umeng_xp_apptext1" android:layout_below="@id/umeng_xp_appicon1" style="@style/umeng_xp_suppose_cell_text" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/umeng_xp_appicon2" android:src="@drawable/umeng_xp_cm_zhanwei" style="@style/umeng_xp_suppose_cell_image" />
+            <TextView android:id="@id/umeng_xp_apptext2" android:layout_below="@id/umeng_xp_appicon2" style="@style/umeng_xp_suppose_cell_text" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/umeng_xp_appicon3" android:src="@drawable/umeng_xp_cm_zhanwei" style="@style/umeng_xp_suppose_cell_image" />
+            <TextView android:id="@id/umeng_xp_apptext3" android:layout_below="@id/umeng_xp_appicon3" style="@style/umeng_xp_suppose_cell_text" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

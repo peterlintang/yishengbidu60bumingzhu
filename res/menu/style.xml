@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/action_copy_blue" android:id="@id/action_copy" android:title="Copy" android:showAsAction="always" />
+    <item android:icon="@drawable/action_addmark_blue" android:id="@id/action_addmark" android:visible="false" android:title="AddBookmark" android:showAsAction="always" />
+    <item android:icon="@drawable/action_share_blue" android:id="@id/action_share" android:title="Share" android:showAsAction="always" />
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_menu" android:background="#ff1c82ac" android:layout_width="fill_parent" android:layout_height="@dimen/height_topmenubar" android:layout_alignParentTop="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/imagebutton_back" android:background="@drawable/buttonbg_common" android:paddingLeft="-2.0px" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:scaleType="centerInside" android:layout_weight="5.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/relativeLayout_searchlayer" android:background="#ff1c82ac" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="11.0sp" android:textColor="#ffffffff" android:textColorHint="#ff55ffff" android:gravity="center" android:id="@id/edittext_searchkeyword" android:background="@drawable/bg_search_input" android:paddingLeft="15.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/height_topmenubar" android:hint="@string/hint_searchbooks" android:singleLine="true" android:imeOptions="actionGo" android:imeActionId="@id/actionGo" />
+                <ImageButton android:id="@id/imagebutton_go_search" android:background="@drawable/buttonbg_common" android:padding="10.0px" android:layout_width="@dimen/height_topmenubar" android:layout_height="@dimen/height_topmenubar" android:src="@drawable/icon_search" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/linearLayout_nomalLayer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/textview_label" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="云端书库" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <ImageButton android:id="@id/imagebutton_refresh" android:background="@drawable/buttonbg_common" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_refresh" android:scaleType="centerInside" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/imagebutton_mycloudstore" android:background="@drawable/buttonbg_common" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_user" android:scaleType="centerInside" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/imagebutton_search" android:background="@drawable/buttonbg_common" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_search" android:scaleType="centerInside" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/toolsIndicator" android:background="#ff093141" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_below="@id/top_menu">
+        <LinearLayout android:id="@id/toolsLLayout" android:animationCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/dayinfoBtn" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_bookcategory" android:background="@drawable/buttonbg_bookstore_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="@string/tab_menu_bookcategory" android:layout_centerInParent="true" />
+                <View android:background="#ff2aabe0" android:layout_width="0.100000024dip" android:layout_height="20.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/dayinfoBtn" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_allbooks" android:background="@drawable/buttonbg_bookstore_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:text="@string/tab_menu_allbooks" android:layout_centerInParent="true" />
+                <View android:background="#ff2aabe0" android:layout_width="0.100000024dip" android:layout_height="20.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/dayinfoBtn" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_recommond" android:background="@drawable/buttonbg_bookstore_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="@string/tab_menu_recommended" android:layout_centerInParent="true" />
+                <View android:background="#ff2aabe0" android:layout_width="0.100000024dip" android:layout_height="20.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/dayinfoBtn" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_mycloudstore" android:background="@drawable/buttonbg_bookstore_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tab_menu_cloudbookstore" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#ff2aabe0" android:layout_width="fill_parent" android:layout_height="5.0px" android:layout_alignParentBottom="true" />
+        <com.ireadercity.b2.ui.widget.ToolSlider android:id="@id/toolSlideIndicator" android:background="#ff2aabe0" android:layout_width="wrap_content" android:layout_height="12.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imageview_topshadow" android:layout_width="fill_parent" android:layout_height="12.0px" android:src="@drawable/topmenu_shadow_x" android:scaleType="fitXY" android:layout_below="@id/toolsIndicator" />
+    <FrameLayout android:id="@id/framelayout_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/imageview_topshadow">
+        <com.ireadercity.b2.ui.widget.FriendlyScrollLayout android:id="@id/scrollLayout_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

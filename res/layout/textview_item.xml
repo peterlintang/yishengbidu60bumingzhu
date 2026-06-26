@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left|center" android:id="@id/tv_more_help" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_more_help" />
+    <TextView android:gravity="left|center" android:id="@id/tv_app_download" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_addfolder2" />
+    <TextView android:gravity="left|center" android:id="@id/tv_more_setting" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_more_setting" />
+    <TextView android:gravity="left|center" android:id="@id/tv_more_info" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_more_info" />
+    <TextView android:gravity="left|center" android:id="@id/tv_app_fetured" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_app_recmd" />
+    <TextView android:gravity="left|center" android:id="@id/tv_Syn_local_books" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_syn_local_books_uiutils" />
+    <TextView android:gravity="left|center" android:id="@id/tv_share" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/filter_books_icon2" />
+    <TextView android:gravity="left|center" android:id="@id/tv_clearCache" android:layout_width="wrap_content" android:layout_height="@dimen/height_topmenubar" android:drawableLeft="@drawable/icon_clearcache" />
+</RelativeLayout>
